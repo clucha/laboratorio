@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head> 
+    <title>Login Laboratorio 1</title>
+    <link href="css/estilologin.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <script>
+    function usrpas(){
+    if (document.form.txt.value=="clucha" && document.form.num.value=="1234"){window.location="peliculas.html"}
+    else {alert("Usuario y/o contraseña incorrecto, intente nuevamente")}
+    }
+    document.oncontextmenu=new Function("return false");
+    </script>
+    <div class="center">
+        <center><img src="imagen/foto.jpg" alt="" /></center>
+        <center><h4>Laboratorio 1 </h4></center>
+        <form name="form" method="POST">
+        <div class="inputbox">    
+        <input type="text" name="txt" placeholder="Usuario">
+    </div>
+         <div class="inputbox">
+        <input type="password" name="num" placeholder="Password">
+        </div>
+        <div class="inputbox">
+        <input type="button" value="Ingresar" onclick="usrpas()">
+        </div>
+    </form>    
+</body>
+</html>
